@@ -1,7 +1,7 @@
 Jayjay - Project Manager and Senior Stylist 
 Kobie - Lead Developer
-Matthew - Senior Water Boy/Ari Brander Enthusiast. CoFounder of the Anti-Zach Mellon Affinity Group. Gun Rights Activist
-Miles - Cheerleader and assistant to Project manager/ Founder and CEO of Incel Rights Affinity Group
+Matthew - 
+Miles - 
 
 Encryption Website
 
