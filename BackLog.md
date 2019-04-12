@@ -8,7 +8,8 @@ Encryption Website
 User Story
  
 - [ ] A user should be able to define a message to be encrypted 
-Difficulty: 2
+  - Difficulty: 2
+  - Requirements:
 
 
 - [ ] A user should be able to choose between three different encryption ciphers 
