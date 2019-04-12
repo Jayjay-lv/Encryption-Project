@@ -6,4 +6,4 @@ Since last class I have made a Repo for our project and added more details to ou
 
 I am going to continue to add to the backlog so we have a set path and instructions for our coding process.
 
-So far no backups in my work but I anticipate many backups once I start working on the code
+So far no blockers in my work but I anticipate many blockers once I start working on the code
