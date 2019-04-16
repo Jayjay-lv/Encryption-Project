@@ -5,7 +5,13 @@ import './App.css';
 class App extends Component {
   render() {
     return(
-      <div> </div>);
+      <div> <form> 
+      Input: <br /> 
+      <input type="text" name="Input" /><br />
+      Output: <br />
+      <input type="text" name="Output" /><br />
+      </form>
+      </div>);
   }
 }   
 
