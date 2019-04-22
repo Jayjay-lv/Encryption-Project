@@ -6,13 +6,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      plaintext: ""
+      plaintext: "",
+      cipherText: ""
     };
     this.updateName = this.updateName.bind(this);
   }
 
   updateName(event){
-    this.setState({plaintext: event.target.value})
+    const plaintext = event.target.value;
+    const cipherText = encrypt(plaintext);
+    this.setState({plaintext, cipherText});
   }
   
   render() {
@@ -20,21 +23,35 @@ class App extends Component {
       <div> <form> 
       Input: <br /> 
       <input type="text" name="Input" onChange={this.updateName}/> <br/>
+      <br/>
       Output: <br/>
-      <input type="text" name="Output" /> <br/>
       </form>
-      {encrypt(this.state.plaintext)}
+      {this.state.cipherText} <br/>
+      {decrypt(this.state.cipherText)}
       </div>
     );
   }
 }   
 
-function encrypt(phrase){
-  return "a" + phrase + "a";
+function randomLetter(){
+  var randomNum = Math.floor((Math.random() * 25) + 0)
+  var alphabet = "abcdefghijklmopqrstuvwxyz"
+  var randLetter = alphabet[randomNum]
+  return randLetter
 }
 
-function decrypt(){
+function encrypt(phrase){
+  const letters = phrase.split('');
+  let cipherText = '';
+  letters.forEach((letter) => {cipherText += randomLetter() + letter} )
+  return cipherText;
+}
 
+function decrypt(phrase){
+const newLetters = phrase.split('');
+let answer = '';
+newLetters.forEach((letter, i) => {if (i % 2 != 0) answer += letter})
+return answer;
 }
 
 export default App;
