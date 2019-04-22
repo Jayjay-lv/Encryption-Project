@@ -14,6 +14,7 @@ class App extends Component {
   updateName(event){
     this.setState({plaintext: event.target.value})
   }
+
   
   render() {
     return(
