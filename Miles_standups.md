@@ -15,4 +15,12 @@ Find a cool encryption to use.
 
 Starting the code and finding a good encryption to use.
 
+## Daily Report 2019-04-22
+
+I did very little except give a suggestion and try to help fix some code.
+
+Refresh my brain for next class and come in witha new outlook.
+
+Alot of errors in the code which is annoying.
+
 
