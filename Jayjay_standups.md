@@ -19,3 +19,9 @@ I want to really get to know how to use react but I still get easily confused
 I've begun to implement styling for the website, however the styling is not implementing well because I have to edit a lot of the code in the javascript. I am working through the kinks and hopefully I get it running soon so I can merge it with the master code.
 
 My main issue is making the code work, lots of little errors that must be fixed.
+
+
+## 4-25-19
+
+Ive continued working on implementing the styling, Ive made a lot of progress and all that is left is to add a few things to the render and merge it with kobies code.
+
