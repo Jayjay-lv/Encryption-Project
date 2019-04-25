@@ -25,3 +25,9 @@ This class Kobie and I worked on creating and implementing an encryption algorit
 Until next class I will be thinking of new algorithms to add
 
 My blocker is what new algorithms we should implement and how to style it
+
+## 2019-04-25
+
+This class Kobie and i fixed a problem with our program to be able to affectilvly use captitol letters. we also looked for more algorithms to use.
+
+My blocker is my lack of code knowledge
