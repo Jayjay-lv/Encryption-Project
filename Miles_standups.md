@@ -23,4 +23,12 @@ Refresh my brain for next class and come in witha new outlook.
 
 Alot of errors in the code which is annoying.
 
+## Daily Report 2019-04-25
+
+I worked on styling and using bootstrap.
+
+See how I can use bootstrap to make styling the website easy.
+
+No blockers
+
 
