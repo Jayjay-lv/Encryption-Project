@@ -1,42 +1,79 @@
+import './bootstrap.css';
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './bootstrap.css'
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      plaintext: ""
+      plaintext: "",
+      cipherText: ""
     };
     this.updateName = this.updateName.bind(this);
   }
 
   updateName(event){
-    this.setState({plaintext: event.target.value})
+    const plaintext = event.target.value;
+    const cipherText = encrypt1(plaintext);
+    this.setState({plaintext, cipherText});
   }
-
   
   render() {
     return(
       <div> <form> 
       Input: <br /> 
       <input type="text" name="Input" onChange={this.updateName}/> <br/>
+      <br/>
       Output: <br/>
-      <input type="text" name="Output" /> <br/>
       </form>
-      {encrypt(this.state.plaintext)}
+      {this.state.cipherText} <br/>
+      {decrypt1(this.state.cipherText)}
+      </div>
+
+      <div> 
+      Output: Decryption 2
+       <br/>
+      {this.state.cipherText2} <br/>
+      {decrypt2(this.state.cipherText2)}
       </div>
     );
   }
 }   
 
-function encrypt(phrase){
-  return "a" + phrase + "a";
+function randomLetter(){
+  var randomNum = Math.floor((Math.random() * 25) + 0)
+  var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  var randLetter = alphabet[randomNum]
+  return randLetter
 }
 
-function decrypt(){
+function encrypt1(phrase){
+  const letters = phrase.split('');
+  let cipherText = '';
+  letters.forEach((letter) => {cipherText += randomLetter() + letter} )
+  return cipherText.toUpperCase();
+}
+
+function decrypt1(phrase){
+const newLetters = phrase.split('');
+let answer = '';
+newLetters.forEach((letter, i) => {if (i % 2 != 0) answer += letter})
+return answer;
+}
+
+function encrypt2(phrase){
+  const letters = phrase.split('');
+  let cipherText2 = '';
+  letters.forEach((letter) => {cipherText2 += randomLetter() + letter} );
+  letters.fromCharCode(0);
+  return cipherText2;
+
+}
+
+function decrypt2(phrase){
 
 }
 
 export default App;
+
