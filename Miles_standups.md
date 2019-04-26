@@ -31,4 +31,12 @@ See how I can use bootstrap to make styling the website easy.
 
 No blockers
 
+## Daily Report 2019-04-26
+
+I looked into bootstrap seeing what i can learn
+
+Try to implement some bootstrap
+
+No blockers
+
 
