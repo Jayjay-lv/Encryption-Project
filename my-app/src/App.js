@@ -14,7 +14,7 @@ class App extends Component {
 
   updateName(event){
     const plaintext = event.target.value;
-    const cipherText = encrypt(plaintext);
+    const cipherText = encrypt1(plaintext);
     this.setState({plaintext, cipherText});
   }
   
@@ -27,7 +27,14 @@ class App extends Component {
       Output: <br/>
       </form>
       {this.state.cipherText} <br/>
-      {decrypt(this.state.cipherText)}
+      {decrypt1(this.state.cipherText)}
+      </div>
+
+      <div> 
+      Output: Decryption 2
+       <br/>
+      {this.state.cipherText2} <br/>
+      {decrypt2(this.state.cipherText2)}
       </div>
     );
   }
@@ -35,23 +42,48 @@ class App extends Component {
 
 function randomLetter(){
   var randomNum = Math.floor((Math.random() * 25) + 0)
-  var alphabet = "abcdefghijklmopqrstuvwxyz"
+  var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   var randLetter = alphabet[randomNum]
   return randLetter
 }
 
-function encrypt(phrase){
+function encrypt1(phrase){
   const letters = phrase.split('');
   let cipherText = '';
   letters.forEach((letter) => {cipherText += randomLetter() + letter} )
-  return cipherText;
+  return cipherText.toUpperCase();
 }
 
-function decrypt(phrase){
+function decrypt1(phrase){
 const newLetters = phrase.split('');
 let answer = '';
 newLetters.forEach((letter, i) => {if (i % 2 != 0) answer += letter})
 return answer;
 }
 
+function encrypt2(phrase){
+  const letters = phrase.split('');
+  let cipherText2 = '';
+  letters.forEach((letter) => {cipherText2 += randomLetter() + letter} );
+  letters.fromCharCode(0);
+  return cipherText2;
+
+}
+
+function decrypt2(phrase){
+
+}
+
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
