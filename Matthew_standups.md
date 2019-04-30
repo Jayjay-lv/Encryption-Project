@@ -39,3 +39,11 @@ This Class i did more reaserch into what ciphers are and their history so i coul
 Untill next class i will continue reading more into how ciphers work
 
 My blocker is coming up with a new cipher to create
+
+## 4 days after Endgame(2019-04-30)
+
+This class i created a seperate and new encrypting algorithm using option keys
+
+Untill next class i will think of new encryptions
+
+My blocker is finding out a way to de-encrypt the new algorithm
