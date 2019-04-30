@@ -21,21 +21,24 @@ class App extends Component {
   
   render() {
     return(
-      <div> <form> 
+      <div class="container"> 
+      <div class="row">
+     
+      <form> 
       Input: <br /> 
       <input type="text" name="Input" onChange={this.updateName}/> <br/>
       <br/>
       Output: <br/>
       </form>
+
       {this.state.cipherText} <br/>
       {decrypt1(this.state.cipherText)}
-      </div>
-
-      <div> 
       Output: Decryption 2
        <br/>
       {this.state.cipherText2} <br/>
       {decrypt2(this.state.cipherText2)}
+      
+      </div>
       </div>
     );
   }
