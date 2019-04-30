@@ -56,6 +56,18 @@ function randomLetter(){
   var randLetter = alphabet[randomNum]
   return randLetter
 }
+function randomSymbol(){
+  var randomNum1 = Math.floor((Math.random() * 25) + 0)
+  var symbols = "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥Ω"
+  var randsymbol = symbols[randomNum1]
+  return randsymbol
+
+}
+const mapping = {
+  "a": "å",
+  "b": "∫",
+  "c": "ç",
+}
 
 function encrypt1(phrase){
   const letters = phrase.split('');
@@ -74,9 +86,8 @@ return answer;
 function encrypt2(phrase){
   const letters = phrase.split('');
   let cipherText2 = '';
-  letters.forEach((letter) => {cipherText2 += '@' + letter} );
+  letters.forEach((letter) => {cipherText2 += randomSymbol() + mapping[letter]} );
   return cipherText2;
-
 }
 
 function decrypt2(phrase){
