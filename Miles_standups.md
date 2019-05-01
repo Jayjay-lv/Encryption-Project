@@ -39,4 +39,11 @@ Try to implement some bootstrap
 
 No blockers
 
+## Daily Report 2019-05-01
+
+I looked at jj's code to see the changes he made with bootstrap.
+
+I want to look at website designs that use bootstrap.
+
+I am having trouble installing a package.
 

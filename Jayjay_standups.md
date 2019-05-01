@@ -33,3 +33,11 @@ I Implemented the code but it didn't work how I wanted it to so I am starting fr
 ## 4-30-19
 
 Added styling to input of page. still adding more but ran into an issue with some commands being undefined
+
+## 5-01-19
+
+I changed the bootstrap implementation so it actually works and the commands are no longer undefined. One issue might be learning how to import specific commands individually and also learning how to use bootstrap again.
+
+I also worked on the challenge for class and got it to work relatively well
+
+next class I plan on using bootstrap to get the website center and make it look more user friendly and less wonky
