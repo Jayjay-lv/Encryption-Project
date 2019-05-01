@@ -63,12 +63,71 @@ function randomSymbol(){
   return randsymbol
 
 }
+const NumberMapping = {
+  "a": 0,
+  "b": 1,
+  "c": 2,
+  "d": 3,
+  "e": 4,
+  "f": 5,
+  "g": 6,
+  "h": 7,
+  "i": 8,
+  "j": 9,
+  "k": 10,
+  "l": 11,
+  "m": 12,
+  "n": 13,
+  "o": 14,
+  "p": 15,
+  "q": 16,
+  "r": 17,
+  "s": 18,
+  "t": 19,
+  "u": 20,
+  "v": 21,
+  "w": 22,
+  "x": 23,
+  "y": 24,
+  "z": 25,
+}
+
 const mapping = {
   "a": "å",
   "b": "∫",
   "c": "ç",
+  "d": "∂",
+  "e": "´",
+  "f": "ƒ",
+  "g": "©",
+  "h": "˙",
+  "i": "ˆ",
+  "j": "∆",
+  "k": "˚",
+  "l": "¬",
+  "m": "µ",
+  "n": "˜",
+  "o": "ø",
+  "p": "π",
+  "q": "œ",
+  "r": "®",
+  "s": "ß",
+  "t": "†",
+  "u": "¨",
+  "v": "√",
+  "w": "∑",
+  "x": "≈",
+  "y": "¥",
+  "z": "Ω",
 }
 
+function CeasarEncrypt(phrase, shift){
+  const letters = prase.split('');
+  let numbers = letters.map((letter) => {return NumberMapping[letter]});
+  let shiftedNumbers = numbers.map((number) => {return (number + shift) % 26});
+  let NewLetters = number.map((number) => {return NumberMapping[number]});
+}
+  
 function encrypt1(phrase){
   const letters = phrase.split('');
   let cipherText = '';
@@ -86,7 +145,7 @@ return answer;
 function encrypt2(phrase){
   const letters = phrase.split('');
   let cipherText2 = '';
-  letters.forEach((letter) => {cipherText2 += randomSymbol() + mapping[letter]} );
+  letters.forEach((letter) => {cipherText2 += randomSymbol() + mapping[letter.toLowerCase()]} );
   return cipherText2;
 }
 
