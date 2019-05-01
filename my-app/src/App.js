@@ -1,4 +1,4 @@
-import './bootstrap.css';
+
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -6,6 +6,7 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
+    this.encrpytLevel = 1;
     this.state = {
       plaintext: "",
       cipherText: ""
@@ -14,29 +15,47 @@ class App extends Component {
   }
 
   updateName(event){
-    const plaintext = event.target.value;
-    const cipherText = encrypt1(plaintext);
-    this.setState({plaintext, cipherText});
+      const plaintext = event.target.value;
+      const cipherText = encrypt1(plaintext);
+      const cipherText2 = encrypt2(plaintext);
+      this.setState({plaintext, cipherText});
+      this.setState({plaintext, cipherText2});
   }
   
+  // changeEncryptLevel(){
+  //   if (this.encrpytLevel = 1)
+  //     this.encrpytLevel = 2
+  //   if (this.encrpytLevel = 2)
+  //     this.encrpytLevel = 1
+  //   // return this.encrpytLevel
+
+  // }
+
   render() {
     return(
       <div class="container"> 
-      <div class="row">
-     
-      <form> 
-      Input: <br /> 
-      <input type="text" name="Input" onChange={this.updateName}/> <br/>
+      <div class="mid-article">
+     <form> 
+    <Form.Group controlId="formBasicInput">
+    <Form.Label>
+    Input: 
+    </Form.Label>
+    <Form.Control size="lg" type="text" placeholder="Enter Input" name="Input" onChange={this.updateName} />
+    <Form.Text className="text-muted">
+      We'll never share your email with anyone else.
+    </Form.Text>
+    </Form.Group>
       <br/>
-      Output: <br/>
-      </form>
+      Output Decryption 1: <br/>
+      </form>;
 
-      {this.state.cipherText} <br/>
-      {decrypt1(this.state.cipherText)}
-      Output: Decryption 2
+      Encrypted message: {this.state.cipherText} <br/>
+      Decrypted message: {decrypt1(this.state.cipherText)}
+      <br/><br/>
+      Output Decryption 2:
        <br/>
-      {this.state.cipherText2} <br/>
-      {decrypt2(this.state.cipherText2)}
+      Encrypted message: {this.state.cipherText2} <br/>
+      Decrypted message: {decrypt2(this.state.cipherText2)}
       
       </div>
       </div>
@@ -68,8 +87,7 @@ return answer;
 function encrypt2(phrase){
   const letters = phrase.split('');
   let cipherText2 = '';
-  letters.forEach((letter) => {cipherText2 += randomLetter() + letter} );
-  letters.fromCharCode(0);
+  letters.forEach((letter) => {cipherText2 += '@' + letter} );
   return cipherText2;
 
 }
