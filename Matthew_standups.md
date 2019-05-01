@@ -47,3 +47,11 @@ This class i created a seperate and new encrypting algorithm using option keys
 Untill next class i will think of new encryptions
 
 My blocker is finding out a way to de-encrypt the new algorithm
+
+## 5 days after Endgame(2019-05-01)
+
+This class i continued working on my 2nd level of encryption, which involves a seperate ceasar cipher.
+
+Untill next class i will continue working on the encryption
+
+my blocker are the mapping problems i am having with the encrypt
