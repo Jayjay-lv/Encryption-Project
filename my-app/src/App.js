@@ -122,10 +122,13 @@ const mapping = {
 }
 
 function CeasarEncrypt(phrase, shift){
-  const letters = prase.split('');
+  const letters = phrase.split('');
   let numbers = letters.map((letter) => {return NumberMapping[letter]});
   let shiftedNumbers = numbers.map((number) => {return (number + shift) % 26});
-  let NewLetters = number.map((number) => {return NumberMapping[number]});
+  var alphabet = "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥Ω";
+  let NewLetters = shiftedNumbers.map((number) => {return alphabet[number]});
+  return NewLetters;
+
 }
   
 function encrypt1(phrase){
@@ -143,9 +146,9 @@ return answer;
 }
 
 function encrypt2(phrase){
-  const letters = phrase.split('');
   let cipherText2 = '';
-  letters.forEach((letter) => {cipherText2 += randomSymbol() + mapping[letter.toLowerCase()]} );
+  CeasarEncrypt(phrase, 3).forEach((letter) => {cipherText2 += randomSymbol() + letter} );
+
   return cipherText2;
 }
 
