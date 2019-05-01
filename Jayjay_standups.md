@@ -25,3 +25,11 @@ My main issue is making the code work, lots of little errors that must be fixed.
 
 Ive continued working on implementing the styling, Ive made a lot of progress and all that is left is to add a few things to the render and merge it with kobies code.
 
+
+## 4-26-19
+
+I Implemented the code but it didn't work how I wanted it to so I am starting from scratch this time using Bootstrap
+
+## 4-30-19
+
+Added styling to input of page. still adding more but ran into an issue with some commands being undefined

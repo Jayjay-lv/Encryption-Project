@@ -31,3 +31,19 @@ My blocker is what new algorithms we should implement and how to style it
 This class Kobie and i fixed a problem with our program to be able to affectilvly use captitol letters. we also looked for more algorithms to use.
 
 My blocker is my lack of code knowledge
+
+## THE DAY OF ENDGAME
+
+This Class i did more reaserch into what ciphers are and their history so i could have more knowledge about what we are coding so it makes it easier.
+
+Untill next class i will continue reading more into how ciphers work
+
+My blocker is coming up with a new cipher to create
+
+## 4 days after Endgame(2019-04-30)
+
+This class i created a seperate and new encrypting algorithm using option keys
+
+Untill next class i will think of new encryptions
+
+My blocker is finding out a way to de-encrypt the new algorithm
