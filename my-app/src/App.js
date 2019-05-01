@@ -1,4 +1,6 @@
 
+import 'react-bootstrap';
+import Form from 'react-bootstrap/Form';
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -57,8 +59,11 @@ class App extends Component {
       Encrypted message: {this.state.cipherText2} <br/>
       Decrypted message: {decrypt2(this.state.cipherText2)}
       
+      </div> <script
+  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin> </script>
       </div>
-      </div>
+     
     );
   }
 }   
