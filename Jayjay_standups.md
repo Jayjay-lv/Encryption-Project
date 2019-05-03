@@ -41,3 +41,9 @@ I changed the bootstrap implementation so it actually works and the commands are
 I also worked on the challenge for class and got it to work relatively well
 
 next class I plan on using bootstrap to get the website center and make it look more user friendly and less wonky
+
+## 5-03-19
+
+Added styling to page to make it look like 90's hacker website. I can't center the input box for the user so I need to find out ohow to do that.
+
+I want to make it look more proffesional and add different pages and miles found a way but we need to find a way to do it with react.

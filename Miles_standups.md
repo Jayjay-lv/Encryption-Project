@@ -47,3 +47,10 @@ I want to look at website designs that use bootstrap.
 
 I am having trouble installing a package.
 
+## Daily Report 2019-05-03
+
+I started to implement a breadcrumb feature for the website's design.
+
+Refresh on how to style by looking at past codes.
+
+I have to make seperate pages for the breadcrumb to work.
