@@ -20,3 +20,13 @@ it didn't work so we have decided to use bootstrap for styling.
 So far encryption is still proving a bit difficult but kobie and matthew are doing well. Jayjay and Miles are working on styling and while 
 the styling that was implemented had sound code, it didn't work properly so we had to start from scratch, and this time we are using bootstrap
 so we have to re-familiarize ourselves again.
+
+## 5-03-19
+
+We've added two encryptions and are currently working on decrypting, the code is coming along well. The styling portion is a bit further behind do to
+issues we've run into with bootstrap. styling is pretty rudementary so far but we have a few ideas to make it look nice and proffesional
+
+## Challenges
+
+Syntax for bootstrap in react doesn't flow well so implementing styling has been rough. also seperating the encryptions into different pages 
+might be a bit tedious. as far as coding the encryption is going well
