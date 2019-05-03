@@ -59,7 +59,7 @@ const mapping = {
   "x": "≈",
   "y": "¥",
   "z": "Ω",
-  " ": " "
+  " ": " ",
 }
 
 class App extends Component {
