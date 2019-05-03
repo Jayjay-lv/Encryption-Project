@@ -55,3 +55,11 @@ This class i continued working on my 2nd level of encryption, which involves a s
 Untill next class i will continue working on the encryption
 
 my blocker are the mapping problems i am having with the encrypt
+
+## 2019-05-03
+
+This class i worked on bug fixes for the code to encrypt the 2nd level of plaintext
+
+Untill next class i will continue with bug fixes and thinking of more ideas
+
+My blocker is figuing out how to de-encrypt the 2nd level
