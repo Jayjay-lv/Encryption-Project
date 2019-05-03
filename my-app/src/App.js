@@ -147,8 +147,7 @@ return answer;
 
 function encrypt2(phrase){
   let cipherText2 = '';
-  CeasarEncrypt(phrase, 3).forEach((letter) => {cipherText2 += randomSymbol() + letter} );
-
+  CeasarEncrypt(phrase.toLowerCase(), 3).forEach((letter) => {cipherText2 += randomSymbol() + letter} );
   return cipherText2;
 }
 
