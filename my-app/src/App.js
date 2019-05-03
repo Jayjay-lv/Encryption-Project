@@ -90,6 +90,7 @@ const NumberMapping = {
   "x": 23,
   "y": 24,
   "z": 25,
+  " ": 26,
 }
 
 const mapping = {
@@ -119,6 +120,7 @@ const mapping = {
   "x": "≈",
   "y": "¥",
   "z": "Ω",
+  " ": " "
 }
 
 function CeasarEncrypt(phrase, shift){
