@@ -34,6 +34,11 @@ Today we began work on our code. I created a few new functions (ie. encrpyt() de
 - Next class I am going to work on the decryption 2 for the encryption project. 
 - some challenges that might occur will be finding a way to shift the string back the same number we shifted it forward when encrypting
 
+## Daily report 2019-05-03
+- finished encrpyt 2. It now takes the length of the string and shifts all the letters by that number
+- Next class I will work on decrypt 2
+- a slight challenge may be getting the cipher to shift back the same number we shifted forward
+
 
 
 
