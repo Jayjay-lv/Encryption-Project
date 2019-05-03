@@ -120,7 +120,7 @@ const mapping = {
   "x": "≈",
   "y": "¥",
   "z": "Ω",
-  " ": " "
+  " ": " ",
 }
 
 function CeasarEncrypt(phrase, shift){
