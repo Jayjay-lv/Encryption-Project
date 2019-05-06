@@ -47,3 +47,7 @@ next class I plan on using bootstrap to get the website center and make it look 
 Added styling to page to make it look like 90's hacker website. I can't center the input box for the user so I need to find out ohow to do that.
 
 I want to make it look more proffesional and add different pages and miles found a way but we need to find a way to do it with react.
+
+##5-06-19
+
+Added more styling. I centered everything and made the input text green. I plan on adding more to mkae it look more polished and user friendly. 
