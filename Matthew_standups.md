@@ -63,3 +63,12 @@ This class i worked on bug fixes for the code to encrypt the 2nd level of plaint
 Untill next class i will continue with bug fixes and thinking of more ideas
 
 My blocker is figuing out how to de-encrypt the 2nd level
+
+
+## 2019-05-6
+
+This class kobie and i worked on the decrypt for the second encryption, it was not easy and we have made little progress
+
+Untill next class we will work on it
+
+My blocker is the figuring out how to de encrypt
