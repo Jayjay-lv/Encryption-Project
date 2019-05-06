@@ -39,6 +39,10 @@ Today we began work on our code. I created a few new functions (ie. encrpyt() de
 - Next class I will work on decrypt 2
 - a slight challenge may be getting the cipher to shift back the same number we shifted forward
 
+## Daily report 2019-05-06
+- today matthew and I worked on decrypt 2. We had a lot of trouble getting getting it to work because phrase.split() wouldnt work. 
+- next class were going to try and continue work on our second decryption 
+- our immediate challenge will be getting phrase.split to work because its currently crashing our code
 
 
 
