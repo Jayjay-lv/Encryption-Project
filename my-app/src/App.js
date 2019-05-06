@@ -134,7 +134,7 @@ class App extends Component {
   CeasarEncrypt(phrase, shift){
     const letters = phrase.split('');
     let numbers = letters.map((letter) => {return NumberMapping[letter]});
-    let shiftedNumbers = numbers.map((number) => {return (number + shift) % 26});
+    let shiftedNumbers = numbers.map((number) => {return (number + shift) % 27});
     var alphabet = "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥Ω";
     let NewLetters = shiftedNumbers.map((number) => {return alphabet[number]});
     return NewLetters;
@@ -159,10 +159,13 @@ class App extends Component {
     let cipherText2 = '';
     this.CeasarEncrypt(phrase.toLowerCase(), this.state.plaintext.length).forEach((letter) => {cipherText2 += this.randomSymbol() + letter} );
     return cipherText2;
-  }
+  }``
 
   decrypt2(phrase){
-
+    const newSymbols = phrase.split('');
+    let answer = '';
+    newSymbols.forEach((letter, i) => {if (i % 2 != 0) answer += letter})
+    return answer;
   }
 }
 
