@@ -54,3 +54,11 @@ I started to implement a breadcrumb feature for the website's design.
 Refresh on how to style by looking at past codes.
 
 I have to make seperate pages for the breadcrumb to work.
+
+## Daily Report 2019-05-06
+
+Continued with breadcrumb
+
+Look at more implements
+
+No blockers
