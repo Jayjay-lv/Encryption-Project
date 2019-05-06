@@ -2,42 +2,73 @@
   text-align: center;
 }
 
-.background{
-  color: grey;
-}
-.body{
-  color: black;
+.formBasicInput{
+  font-family: monospace;
 }
 .font{
   color: green;
+  font-family: monospace;;
 }
 
 .text{
   position: center;
   font-family: monospace;
+  color: limegreen;
 }
 
+body{
+  background-color: black;
+}
 .Outputs{
+  text-align: center;
   font-size: 20px;
   font-color:green;
-  color: lightgreen;
+  color: limegreen;
   position: center;
   font-family: monospace;
 }
 
-
-.message{
-  font-size: 20px;
-  font-color:green;
-  color: lightgreen;
-  font-family: monospace;
+.div{
+position: center;
+width: relative;
+height: relative;
+text-align: center;
 }
 
+.placeholder{
+  color:limegreen;
+}
 
-.Input{
+.Inputbox{
   position: center;
   padding: 5px;
+  font-family: monospace;
+  color:limegreen;
+  background-color: black;
+
 }
+#Input{
+ width: 40;
+ height: 30;
+ font-size: 20px;
+ position: center;
+ font-family: monospace;
+ color: limegreen;
+ text-align: center;
+
+}
+
+#box{
+  position: center;
+  text-align: center;
+}
+#message{
+  text-align: center;
+  font-size: 20px;
+  color: limegreen;
+  font-family: monospace;
+}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

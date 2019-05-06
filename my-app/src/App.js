@@ -36,7 +36,7 @@ class App extends Component {
 
   render() {
     return(
-      <div style={{ textAlign:"center",width: "max", height: "relative", background: "black"}}> 
+      <div id='div'> 
       <div>
       <Alert variant="success">
   <Alert.Heading className='Outputs'role="alert" class="alert alert-success">Hey, Welcome to Our encryption Site</Alert.Heading>
@@ -46,13 +46,17 @@ class App extends Component {
   <hr />
   </Alert>
      <form> 
-    <Form.Group size="lg"controlId="formBasicInput">
-    <Form.Label className='message'style={{ width: 40, height: 20, background: "grey",}}>
+    <Form.Group id='box'controlId="formBasicInput">
+    <Form.Label id='Input'>
+   <p>
     Encrypt
+    </p>
     </Form.Label>
-    <Form.Control style={{ textAlign:"center",width: "max", height: "relative", background: "black"}} type="text" placeholder="Enter Input" className='Input' onChange={this.updateName} />
-    <Form.Text className='message'>
+    <Form.Control type="text" placeholder="Enter Input" className='Inputbox' onChange={this.updateName} />
+    <Form.Text>
+    <p id='message'>
       We'll never share your message with anyone else.
+      </p>
     </Form.Text>
     </Form.Group>
       <br/>
