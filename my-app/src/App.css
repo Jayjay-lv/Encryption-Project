@@ -5,7 +5,9 @@
 .background{
   color: grey;
 }
-
+.body{
+  color: black;
+}
 .font{
   color: green;
 }
