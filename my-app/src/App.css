@@ -2,6 +2,41 @@
   text-align: center;
 }
 
+.background{
+  color: grey;
+}
+
+.font{
+  color: green;
+}
+
+.text{
+  position: center;
+  font-family: monospace;
+}
+
+.Outputs{
+  font-size: 20px;
+  font-color:green;
+  color: lightgreen;
+  position: center;
+  font-family: monospace;
+}
+
+
+.message{
+  font-size: 20px;
+  font-color:green;
+  color: lightgreen;
+  font-family: monospace;
+}
+
+
+.Input{
+  position: center;
+  padding: 5px;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;

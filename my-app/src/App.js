@@ -1,6 +1,7 @@
 
 import 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
+import Alert from 'react-bootstrap/Alert';
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -35,22 +36,30 @@ class App extends Component {
 
   render() {
     return(
-      <div class="container"> 
-      <div class="mid-article">
+      <div style={{ textAlign:"center",width: "max", height: "relative", background: "black"}}> 
+      <div>
+      <Alert variant="success">
+  <Alert.Heading className='Outputs'role="alert" class="alert alert-success">Hey, Welcome to Our encryption Site</Alert.Heading>
+  <p className='Outputs' type="text">
+    Anyways Put something in the input box and we'll make it so  no one understands what you typed
+  </p>
+  <hr />
+  </Alert>
      <form> 
-    <Form.Group controlId="formBasicInput">
-    <Form.Label>
-    Input: 
+    <Form.Group size="lg"controlId="formBasicInput">
+    <Form.Label className='message'style={{ width: 40, height: 20, background: "grey",}}>
+    Encrypt
     </Form.Label>
-    <Form.Control size="lg" type="text" placeholder="Enter Input" name="Input" onChange={this.updateName} />
-    <Form.Text className="text-muted">
-      We'll never share your email with anyone else.
+    <Form.Control style={{ textAlign:"center",width: "max", height: "relative", background: "black"}} type="text" placeholder="Enter Input" className='Input' onChange={this.updateName} />
+    <Form.Text className='message'>
+      We'll never share your message with anyone else.
     </Form.Text>
     </Form.Group>
       <br/>
-      Output Decryption 1: <br/>
-      </form>;
-
+      </form>
+      <p className ='Outputs' type="text">
+      Output Decryption 1:
+       <br/>
       Encrypted message: {this.state.cipherText} <br/>
       Decrypted message: {decrypt1(this.state.cipherText)}
       <br/><br/>
@@ -58,10 +67,12 @@ class App extends Component {
        <br/>
       Encrypted message: {this.state.cipherText2} <br/>
       Decrypted message: {decrypt2(this.state.cipherText2)}
-      
-      </div> <script
-  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-  crossorigin> </script>
+      </p>
+      </div> 
+      <script 
+      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin> 
+      </script>
       </div>
      
     );
