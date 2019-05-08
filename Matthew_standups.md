@@ -72,3 +72,11 @@ This class kobie and i worked on the decrypt for the second encryption, it was n
 Untill next class we will work on it
 
 My blocker is the figuring out how to de encrypt
+
+## 2019-05-8
+
+This class kobie and i made progress on our decryption, while jayjay worked on merging some of the branches
+
+Untill next class we will continue getting ready for the big merge
+
+My blocker is the ceasar part of the decryption and having to shift back
