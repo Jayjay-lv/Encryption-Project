@@ -44,5 +44,10 @@ Today we began work on our code. I created a few new functions (ie. encrpyt() de
 - next class were going to try and continue work on our second decryption 
 - our immediate challenge will be getting phrase.split to work because its currently crashing our code
 
+## Daily report 2019-05-08
+- Today matthew and I presented our project to the class. Then we also fixed our problem with phrase.split() Riley helped us realize that we had to define our ciphertext2. 
+- Next class I am going to work on figuring out how to shift back our text to its original letters. 
+- our challenge will be trying to figure out the syntax for how to shift back the string
+
 
 
