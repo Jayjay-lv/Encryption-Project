@@ -30,3 +30,8 @@ issues we've run into with bootstrap. styling is pretty rudementary so far but w
 
 Syntax for bootstrap in react doesn't flow well so implementing styling has been rough. also seperating the encryptions into different pages 
 might be a bit tedious. as far as coding the encryption is going well
+
+## 5-08-19
+
+Matthew and Kobie have been progressing on the depcryption aspect of their code. Miles has found the next step for styling which allows the encrypptions to be on
+seperate pages. jayjay has added styling to mkae the page look like a 90's hacker website and has succesfully merged two side branches
