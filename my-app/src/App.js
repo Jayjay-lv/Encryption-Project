@@ -68,7 +68,8 @@ class App extends Component {
     this.encrpytLevel = 1;
     this.state = {
       plaintext: "",
-      cipherText: ""
+      cipherText: "",
+      cipherText2: ""
     };
     this.updateName = this.updateName.bind(this);
     this.randomLetter = this.randomLetter.bind(this);
@@ -159,12 +160,13 @@ class App extends Component {
     let cipherText2 = '';
     this.CeasarEncrypt(phrase.toLowerCase(), this.state.plaintext.length).forEach((letter) => {cipherText2 += this.randomSymbol() + letter} );
     return cipherText2;
-  }``
+  }
 
   decrypt2(phrase){
     const newSymbols = phrase.split('');
     let answer = '';
     newSymbols.forEach((letter, i) => {if (i % 2 != 0) answer += letter})
+
     return answer;
   }
 }
