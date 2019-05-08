@@ -62,3 +62,11 @@ Continued with breadcrumb
 Look at more implements
 
 No blockers
+
+## Daily Report 2019-05-08
+
+Waited for Jj to merge and now I can implement breadcrumb.
+
+Implement breadcrumb
+
+Hopefully no blockers when implementing.
