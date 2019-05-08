@@ -51,3 +51,8 @@ I want to make it look more proffesional and add different pages and miles found
 ##5-06-19
 
 Added more styling. I centered everything and made the input text green. I plan on adding more to mkae it look more polished and user friendly. 
+
+
+##5-06-19
+
+Merged two branches and will continue to sperate the enryptions by pages so each encryption has its own page
