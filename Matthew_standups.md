@@ -80,3 +80,11 @@ This class kobie and i made progress on our decryption, while jayjay worked on m
 Untill next class we will continue getting ready for the big merge
 
 My blocker is the ceasar part of the decryption and having to shift back
+
+## 2019-05-14
+
+Today kobie and i did more work on the decypt and fixed some existing bugs with the ceasar shift
+
+We will still prepare for the big merge
+
+Our blokcer is still shifting to letters from the ceasar.
