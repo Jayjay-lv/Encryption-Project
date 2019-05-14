@@ -70,3 +70,7 @@ Waited for Jj to merge and now I can implement breadcrumb.
 Implement breadcrumb
 
 Hopefully no blockers when implementing.
+
+## 2019-05-08
+
+Started implementing breadcrumbs with the help of Jayjay
