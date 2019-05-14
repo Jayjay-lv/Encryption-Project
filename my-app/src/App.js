@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const specialAlphabet = "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥Ω";
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
 const NumberMapping = {
   "a": 0,
   "b": 1,
@@ -83,10 +86,10 @@ class App extends Component {
 
   updateName(event){
       const plaintext = event.target.value;
+      this.setState({plaintext});
       const cipherText = this.encrypt1(plaintext);
       const cipherText2 = this.encrypt2(plaintext);
-      this.setState({plaintext, cipherText});
-      this.setState({plaintext, cipherText2});
+      this.setState({cipherText, cipherText2});
   }
   
   // changeEncryptLevel(){
@@ -119,7 +122,6 @@ class App extends Component {
 
   randomLetter(){
     var randomNum = Math.floor((Math.random() * 25) + 0)
-    var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     var randLetter = alphabet[randomNum]
     return randLetter
   }
@@ -136,8 +138,7 @@ class App extends Component {
     const letters = phrase.split('');
     let numbers = letters.map((letter) => {return NumberMapping[letter]});
     let shiftedNumbers = numbers.map((number) => {return (number + shift) % 27});
-    var alphabet = "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥Ω";
-    let NewLetters = shiftedNumbers.map((number) => {return alphabet[number]});
+    let NewLetters = shiftedNumbers.map((number) => {return specialAlphabet[number]});
     return NewLetters;
 
   }
@@ -158,7 +159,8 @@ class App extends Component {
 
   encrypt2(phrase){
     let cipherText2 = '';
-    this.CeasarEncrypt(phrase.toLowerCase(), this.state.plaintext.length).forEach((letter) => {cipherText2 += this.randomSymbol() + letter} );
+    console.log(phrase.length)
+    this.CeasarEncrypt(phrase.toLowerCase(), phrase.length).forEach((letter) => {cipherText2 += this.randomSymbol() + letter} );
     return cipherText2;
   }
 
@@ -166,8 +168,10 @@ class App extends Component {
     const newSymbols = phrase.split('');
     let answer = '';
     newSymbols.forEach((letter, i) => {if (i % 2 != 0) answer += letter})
-
-    return answer;
+    let NumberArray = answer.split("").map((c) => specialAlphabet.indexOf(c));
+    // let shiftedNumberArray = NumberArray.forEach((number) => {number -= answer.length})
+    console.log(NumberArray)
+    return "still not working :(";
   }
 }
 
