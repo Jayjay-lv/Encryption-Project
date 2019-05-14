@@ -49,5 +49,10 @@ Today we began work on our code. I created a few new functions (ie. encrpyt() de
 - Next class I am going to work on figuring out how to shift back our text to its original letters. 
 - our challenge will be trying to figure out the syntax for how to shift back the string
 
+## Daily report 2019-05-14
+- I discovered a bug in our code where it would not include the first letter in the plaintext when counting how many characters there are in the string. We fixed it by changing what we were actually counting from the plaintext to the passed in phrase.
+- next class we are going to continue working on how to shift our string back to its original form
+- A challenge is going to be figuring out how to shift it back by the correct number
+
 
 
