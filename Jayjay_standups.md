@@ -56,3 +56,7 @@ Added more styling. I centered everything and made the input text green. I plan 
 ##5-06-19
 
 Merged two branches and will continue to sperate the enryptions by pages so each encryption has its own page
+
+##5-14-19
+
+Assisted miles in implementing his idea of using breadcrumbs in out app to seperate encryptions by page. 
