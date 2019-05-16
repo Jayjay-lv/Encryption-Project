@@ -88,3 +88,11 @@ Today kobie and i did more work on the decypt and fixed some existing bugs with 
 We will still prepare for the big merge
 
 Our blokcer is still shifting to letters from the ceasar.
+
+## 2019-05-16
+
+Today kobie and i struggled with the decrypt, making little progress
+
+We are preparing to be in mvp state
+
+Our blocker is the decrypt2 function
