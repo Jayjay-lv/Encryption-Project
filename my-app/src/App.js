@@ -167,11 +167,15 @@ class App extends Component {
   decrypt2(phrase){
     const newSymbols = phrase.split('');
     let answer = '';
-    newSymbols.forEach((letter, i) => {if (i % 2 != 0) answer += letter})
+    newSymbols.forEach((letter, i) => {if (i % 2 != 0) answer += letter});
     let NumberArray = answer.split("").map((c) => specialAlphabet.indexOf(c));
+    let shiftedNumberArray = '';
+    NumberArray.forEach((number, i) => {shiftedNumberArray -= answer.length})
+    return shiftedNumberArray;
+    
     // let shiftedNumberArray = NumberArray.forEach((number) => {number -= answer.length})
-    console.log(NumberArray)
-    return "still not working :(";
+    // console.log(NumberArray)
+    // return "still not working :(";
   }
 }
 
