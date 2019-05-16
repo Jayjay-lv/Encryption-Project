@@ -54,5 +54,10 @@ Today we began work on our code. I created a few new functions (ie. encrpyt() de
 - next class we are going to continue working on how to shift our string back to its original form
 - A challenge is going to be figuring out how to shift it back by the correct number
 
+## Daily report 2019-05-16
+- Once again we tried to work on decrypt 2 but had a lot of problems. we couldn't get our function to split the letters and change them into and array of numbers
+- next class were gonna work on decrypt 2 again
+- were going to have to figure out a way to make the numbers go into an array and not combine together to form one number
+
 
 
