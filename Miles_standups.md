@@ -74,3 +74,12 @@ Hopefully no blockers when implementing.
 ## 2019-05-08
 
 Started implementing breadcrumbs with the help of Jayjay
+
+
+## 2019-05-16
+
+Riley helped me get started with using a router
+
+Watch the video talking about routers
+
+Blockers could just be unforseen problems
