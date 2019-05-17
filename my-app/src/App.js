@@ -3,7 +3,6 @@ import 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import Alert from 'react-bootstrap/Alert';
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 const NumberMapping = {
@@ -109,9 +108,8 @@ class App extends Component {
       <Alert variant="success">
   <Alert.Heading className='Outputs'role="alert" class="alert alert-success">Hey, Welcome to Our encryption Site</Alert.Heading>
   <p className='Outputs' type="text">
-    Anyways Put something in the input box and we'll make it so  no one understands what you typed
+   Put something in the input box and we'll make it so  no one understands what you typed
   </p>
-  <hr />
   </Alert>
      <form> 
     <Form.Group id='box'controlId="formBasicInput">
@@ -184,7 +182,7 @@ class App extends Component {
   decrypt1(phrase){
     const newLetters = phrase.split('');
     let answer = '';
-    newLetters.forEach((letter, i) => {if (i % 2 != 0) answer += letter})
+    newLetters.forEach((letter, i) => {if (i % 2 !== 0) answer += letter})
     return answer;
   }
 
@@ -198,7 +196,7 @@ class App extends Component {
   decrypt2(phrase){
     const newSymbols = phrase.split('');
     let answer = '';
-    newSymbols.forEach((letter, i) => {if (i % 2 != 0) answer += letter})
+    newSymbols.forEach((letter, i) => {if (i % 2 !== 0) answer += letter})
     return answer;
   }
 }
