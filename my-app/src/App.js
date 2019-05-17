@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const specialAlphabet = "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥Ω";
-const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const specialAlphabet = "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥Ω ";
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ "
 
 const NumberMapping = {
   "a": 0,
@@ -169,9 +169,11 @@ class App extends Component {
     let answer = '';
     newSymbols.forEach((letter, i) => {if (i % 2 != 0) answer += letter});
     let NumberArray = answer.split("").map((c) => specialAlphabet.indexOf(c));
-    let shiftedNumberArray = '';
-    NumberArray.forEach((number, i) => {shiftedNumberArray -= answer.length})
-    return shiftedNumberArray;
+    let shiftedNumberArray = [];
+    NumberArray.forEach((number, i) => {shiftedNumberArray.push((number + 27 - answer.length) % 27)});
+    let originalMessage = shiftedNumberArray.map((number) => {return alphabet[number]});
+    console.log(originalMessage)
+    return originalMessage;
     
     // let shiftedNumberArray = NumberArray.forEach((number) => {number -= answer.length})
     // console.log(NumberArray)
