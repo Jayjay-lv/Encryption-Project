@@ -96,3 +96,11 @@ Today kobie and i struggled with the decrypt, making little progress
 We are preparing to be in mvp state
 
 Our blocker is the decrypt2 function
+
+## 2019-05-17
+
+Today Kobie and i finally made a breakthrough with the decrypt, now having it sort of decrypt messages
+
+We will still be working on the bug fixes
+
+Our blockers are the bugs that we have to fix
