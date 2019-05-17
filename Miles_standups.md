@@ -83,3 +83,11 @@ Riley helped me get started with using a router
 Watch the video talking about routers
 
 Blockers could just be unforseen problems
+
+## Daily Report 2019-05-17
+
+Got react router to work
+
+See what to copy and paste
+
+No blockers
