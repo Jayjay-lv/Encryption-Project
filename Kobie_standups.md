@@ -59,5 +59,12 @@ Today we began work on our code. I created a few new functions (ie. encrpyt() de
 - next class were gonna work on decrypt 2 again
 - were going to have to figure out a way to make the numbers go into an array and not combine together to form one number
 
+## Daily report 2019-05-17
+- Today we made a lot of progress on our decrypt 2 and almost finished it. There are just a few bugs that are still happening
+- Next class im going to try and work out the bugs so it can perfectly decrypt the message
+- the problem were currently having is when the string gets to long it just seems to break for some reason
+
+
+
 
 
