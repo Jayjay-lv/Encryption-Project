@@ -5,7 +5,7 @@ import Alert from 'react-bootstrap/Alert';
 import React, { Component } from 'react';
 import './App.css';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
 const specialAlphabet = "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥Ω ";
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ "
