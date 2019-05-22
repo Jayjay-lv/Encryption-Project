@@ -7,6 +7,9 @@ import './App.css';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
 
+const specialAlphabet = "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥Ω ";
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+
 const NumberMapping = {
   "a": 0,
   "b": 1,
@@ -74,7 +77,7 @@ class App extends Component {
     this.state = {
       plaintext: "",
       cipherText: "",
-      cipherText2: "",
+      cipherText2: ""
     };
     this.updateName = this.updateName.bind(this);
     this.randomLetter = this.randomLetter.bind(this);
@@ -88,10 +91,10 @@ class App extends Component {
 
   updateName(event){
       const plaintext = event.target.value;
+      this.setState({plaintext});
       const cipherText = this.encrypt1(plaintext);
       const cipherText2 = this.encrypt2(plaintext);
-      this.setState({plaintext, cipherText});
-      this.setState({plaintext, cipherText2});
+      this.setState({cipherText, cipherText2});
   }
   
   // changeEncryptLevel(){
@@ -129,7 +132,6 @@ class App extends Component {
 
   randomLetter(){
     var randomNum = Math.floor((Math.random() * 25) + 0)
-    var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     var randLetter = alphabet[randomNum]
     return randLetter
   }
@@ -146,8 +148,7 @@ class App extends Component {
     const letters = phrase.split('');
     let numbers = letters.map((letter) => {return NumberMapping[letter]});
     let shiftedNumbers = numbers.map((number) => {return (number + shift) % 27});
-    var alphabet = "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥Ω";
-    let NewLetters = shiftedNumbers.map((number) => {return alphabet[number]});
+    let NewLetters = shiftedNumbers.map((number) => {return specialAlphabet[number]});
     return NewLetters;
 
   }
@@ -169,15 +170,27 @@ class App extends Component {
 
   encrypt2(phrase){
     let cipherText2 = '';
-    this.CeasarEncrypt(phrase.toLowerCase(), this.state.plaintext.length).forEach((letter) => {cipherText2 += this.randomSymbol() + letter} );
+    console.log(phrase.length)
+    this.CeasarEncrypt(phrase.toLowerCase(), phrase.length).forEach((letter) => {cipherText2 += this.randomSymbol() + letter} );
     return cipherText2;
   }
 
   decrypt2(phrase){
     const newSymbols = phrase.split('');
     let answer = '';
-    newSymbols.forEach((letter, i) => {if (i % 2 !== 0) answer += letter})
-    return answer;
+    newSymbols.forEach((letter, i) => {if (i % 2 != 0) answer += letter});
+    console.log(answer)
+    let NumberArray = answer.split("").map((c) => {const i = specialAlphabet.indexOf(c); console.log(i); return i});
+    let shiftedNumberArray = [];
+    NumberArray.forEach((number, i) => {shiftedNumberArray.push((number + (27 - answer.length % 27)) % 27)});
+    console.log(shiftedNumberArray);
+    let originalMessage = shiftedNumberArray.map((number) => {return alphabet[number]});
+    console.log(originalMessage)
+    return originalMessage;
+    
+    // let shiftedNumberArray = NumberArray.forEach((number) => {number -= answer.length})
+    // console.log(NumberArray)
+    // return "still not working :(";
   }
 };
 
@@ -270,7 +283,7 @@ export default App;
 
 
 
-
+//(number + (27 - length % 27)) % 27
 
 
 
