@@ -60,3 +60,6 @@ Merged two branches and will continue to sperate the enryptions by pages so each
 ##5-14-19
 
 Assisted miles in implementing his idea of using breadcrumbs in out app to seperate encryptions by page. 
+
+## 2019-05-22
+Helped Miles with finishing react router, no we just need to merge.
