@@ -5,6 +5,8 @@ import Alert from 'react-bootstrap/Alert';
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
 
 const NumberMapping = {
   "a": 0,
@@ -105,49 +107,26 @@ class App extends Component {
   render() {
     return(
       <div id='div'> 
-      <div>
-      <Alert variant="success">
-  <Alert.Heading className='Outputs'role="alert" class="alert alert-success">Hey, Welcome to Our encryption Site</Alert.Heading>
-  <p className='Outputs' type="text">
-    Anyways Put something in the input box and we'll make it so  no one understands what you typed
-  </p>
-  <hr />
-  </Alert>
-     <form> 
-    <Form.Group id='box'controlId="formBasicInput">
-    <Form.Label id='Input'>
-   <p>
-    Encrypt
-    </p>
-    </Form.Label>
-    <Form.Control type="text" placeholder="Enter Input" className='Inputbox' onChange={this.updateName} />
-    <Form.Text>
-    <p id='message'>
-      We'll never share your message with anyone else.
-      </p>
-    </Form.Text>
-    </Form.Group>
-      <br/>
-      </form>
-      <p className ='Outputs' type="text">
-      Output Decryption 1:
-       <br/>
-      Encrypted message: {this.state.cipherText} <br/>
-      Decrypted message: {this.decrypt1(this.state.cipherText)}
-      <br/><br/>
-      Output Decryption 2:
-       <br/>
-      Encrypted message: {this.state.cipherText2} <br/>
-      Decrypted message: {this.decrypt2(this.state.cipherText2)}
-      </p>
-      </div> 
-      <script 
-      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-      crossorigin> 
-      </script>
+        <Router>
+         
+            <Link to="/foop">Home</Link>
+            <br />
+            <Link to="/foo">Encryption 1</Link>
+            <br />
+            <Link to="/foo2">Encryption 2</Link>
+          <Route path="/foop" render={() => {return homep(this)}}/>
+          <Route path="/foo" render={() => {return first_e(this)}}/>
+          <Route path="/foo2" render={() => {return second_e(this)}}/>
+        </Router> 
+        
+        <script 
+          src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+          crossorigin> 
+        </script>
       </div>
     );
   }  
+
 
   randomLetter(){
     var randomNum = Math.floor((Math.random() * 25) + 0)
@@ -201,7 +180,89 @@ class App extends Component {
     newSymbols.forEach((letter, i) => {if (i % 2 != 0) answer += letter})
     return answer;
   }
-}
+};
+
+const homep = (comp) =>(
+  <div className = "Outputs"> 
+   <h1 className="Outputs"role="alert" class="text">Hey, Welcome to Our Encryption Site</h1>
+   <p className ="Outputs"type="text"> The is the homepage, please click either Encryption 1 or 2. </p>
+  </div>
+  )
+
+const first_e = (comp) => (
+    <div className='Outputs'>
+    <div>
+    <Alert>
+     <Alert.Heading className='Outputs'role="alert" class="alert alert-success">Encryption 1</Alert.Heading>
+  <p className='Outputs' type="text">
+    Type Below
+  </p>
+  </Alert>  
+     <form> 
+    <Form.Group id='box'controlId="formBasicInput">
+    <Form.Label id='Input'>
+    </Form.Label>
+    <Form.Control type="text" placeholder="Enter Input" className='Inputbox' onChange={comp.updateName} />
+    <Form.Text>
+    <p id='message'>
+      We'll never share your message with anyone else.
+      </p>
+    </Form.Text>
+    </Form.Group>
+      <br/>
+      </form>
+      <p className ='Outputs' type="text">
+      Output Decryption 1:
+       <br/>
+      Encrypted message: {comp.state.cipherText} <br/>
+      Decrypted message: {comp.decrypt1(comp.state.cipherText)}
+      </p>
+      </div> 
+      <script 
+      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin> 
+      </script>
+
+      </div>
+      )
+
+const second_e = (comp) =>(
+  <div className="Outputs">
+   <div>
+    <Alert>
+     <Alert.Heading className='Outputs'role="alert" class="alert alert-success">Encryption 2</Alert.Heading>
+  <p className='Outputs' type="text">
+    Type Below
+  </p>
+  </Alert>  
+     <form> 
+    <Form.Group id='box'controlId="formBasicInput">
+    <Form.Label id='Input'>
+    </Form.Label>
+    <Form.Control type="text" placeholder="Enter Input" className='Inputbox' onChange={comp.updateName} />
+    <Form.Text>
+    <p id='message'>
+      We'll never share your message with anyone else.
+      </p>
+    </Form.Text>
+    </Form.Group>
+      <br/>
+      </form>
+      <p className ='Outputs' type="text">
+      Output Decryption 2:
+       <br/>
+      Encrypted message: {comp.state.cipherText2} <br/>
+      Decrypted message: {comp.decrypt2(comp.state.cipherText2)}
+      </p>
+      </div> 
+      <script 
+      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin> 
+      </script>
+  </div>
+  )
+
+
 
 export default App;
 
