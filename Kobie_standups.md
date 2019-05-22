@@ -64,6 +64,12 @@ Today we began work on our code. I created a few new functions (ie. encrpyt() de
 - Next class im going to try and work out the bugs so it can perfectly decrypt the message
 - the problem were currently having is when the string gets to long it just seems to break for some reason
 
+## Daily report 2019-05-22
+- we finally finished decrypt 2 with a lot of help from Riley. We were able to fix the bug we had in our decrpyt 2 where it wouldnt decrypt a message longer than 27 characters
+- Next class we'll work on making the website more usable 
+- we might encounter some problems with splitting up the input box for encrypt and decrypt
+
+
 
 
 
