@@ -168,9 +168,11 @@ class App extends Component {
     const newSymbols = phrase.split('');
     let answer = '';
     newSymbols.forEach((letter, i) => {if (i % 2 != 0) answer += letter});
-    let NumberArray = answer.split("").map((c) => specialAlphabet.indexOf(c));
+    console.log(answer)
+    let NumberArray = answer.split("").map((c) => {const i = specialAlphabet.indexOf(c); console.log(i); return i});
     let shiftedNumberArray = [];
-    NumberArray.forEach((number, i) => {shiftedNumberArray.push((number + 27 - answer.length) % 27)});
+    NumberArray.forEach((number, i) => {shiftedNumberArray.push((number + (27 - answer.length % 27)) % 27)});
+    console.log(shiftedNumberArray);
     let originalMessage = shiftedNumberArray.map((number) => {return alphabet[number]});
     console.log(originalMessage)
     return originalMessage;
@@ -186,7 +188,7 @@ class App extends Component {
 
 
 
-
+//(number + (27 - length % 27)) % 27
 
 
 
