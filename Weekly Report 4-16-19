@@ -35,3 +35,9 @@ might be a bit tedious. as far as coding the encryption is going well
 
 Matthew and Kobie have been progressing on the depcryption aspect of their code. Miles has found the next step for styling which allows the encrypptions to be on
 seperate pages. jayjay has added styling to mkae the page look like a 90's hacker website and has succesfully merged two side branches
+
+## 5-22-19
+Styling and routing has been succesfully implemented by Jayjay and Miles. Kobie and matthew have finished the decryption code for both encryptions.
+Branches have been merged and website is completely functional
+
+Might add decrpytion options to put in text.

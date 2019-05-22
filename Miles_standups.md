@@ -91,3 +91,9 @@ Got react router to work
 See what to copy and paste
 
 No blockers
+
+## Daily Report 2019-05-22
+
+Finished react router and pushed it
+
+No blockers
