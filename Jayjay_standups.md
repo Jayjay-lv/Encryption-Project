@@ -25,3 +25,12 @@ My main issue is making the code work, lots of little errors that must be fixed.
 
 Ive continued working on implementing the styling, Ive made a lot of progress and all that is left is to add a few things to the render and merge it with kobies code.
 
+
+## 5-17-19
+
+Miles found a router method to make the encryptions appear on different pages with my assistance
+
+we will continue to polish our page next class
+
+blocker might be making the page run smoothly seeing as their are some aspects of the router implementaion that was are unsure of what they do
+
