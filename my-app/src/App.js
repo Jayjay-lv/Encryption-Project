@@ -104,7 +104,7 @@ class App extends Component {
       plaintext: "",
       cipherText: "",
       cipherText2: "",
-      cipherText3: ""
+      cipherText3: "",
     };
     this.updateName = this.updateName.bind(this);
     this.randomLetter = this.randomLetter.bind(this);
@@ -115,8 +115,8 @@ class App extends Component {
     this.decrypt1 = this.decrypt1.bind(this);
     this.encrypt2 = this.encrypt2.bind(this);
     this.decrypt2 = this.decrypt2.bind(this);
-    this.encrypt3 = this.encrypt2.bind(this);
-    this.decrypt3 = this.decrypt2.bind(this);
+    this.encrypt3 = this.encrypt3.bind(this);
+    this.decrypt3 = this.decrypt3.bind(this);
   }
 
   updateName(event){
@@ -124,7 +124,8 @@ class App extends Component {
       this.setState({plaintext});
       const cipherText = this.encrypt1(plaintext);
       const cipherText2 = this.encrypt2(plaintext);
-      this.setState({cipherText, cipherText2});
+      const cipherText3 = this.encrypt3(plaintext);
+      this.setState({cipherText, cipherText2, cipherText3});
   }
   
   // changeEncryptLevel(){
