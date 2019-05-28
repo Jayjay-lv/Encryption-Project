@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const galacticAlphabet = "ᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ𝙹!¡ᑑ∷ᓭℸ ̣ ⚍⍊∴ ̇/||⨅";
 const specialAlphabet = "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥Ω ";
-const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
 
 const NumberMapping = {
   "a": 0,
@@ -65,6 +66,36 @@ const mapping = {
   " ": " ",
 }
 
+const mapping2 = {
+  "a": "ᔑ",
+  "b": "ʖ",
+  "c": "ᓵ",
+  "d": "↸",
+  "e": "ᒷ",
+  "f": "⎓",
+  "g": "⊣",
+  "h": "⍑",
+  "i": "╎",
+  "j": "⋮",
+  "k": "ꖌ",
+  "l": "ꖎ",
+  "m": "ᒲ",
+  "n": "リ",
+  "o": "𝙹",
+  "p": "!¡",
+  "q": "ᑑ",
+  "r": "∷",
+  "s": "ᓭ",
+  "t": "ℸ",
+  "u": " ̣",
+  "v": "⚍",
+  "w": "∴",
+  "x": "̇/",
+  "y": "||",
+  "z": "⨅",
+  " ": " ",
+}
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -72,16 +103,20 @@ class App extends Component {
     this.state = {
       plaintext: "",
       cipherText: "",
-      cipherText2: ""
+      cipherText2: "",
+      cipherText3: ""
     };
     this.updateName = this.updateName.bind(this);
     this.randomLetter = this.randomLetter.bind(this);
     this.randomSymbol = this.randomSymbol.bind(this);
+    this.randomAlpha = this.randomAlpha.bind(this);
     this.CeasarEncrypt = this.CeasarEncrypt.bind(this);
     this.encrypt1 = this.encrypt1.bind(this);
     this.decrypt1 = this.decrypt1.bind(this);
     this.encrypt2 = this.encrypt2.bind(this);
     this.decrypt2 = this.decrypt2.bind(this);
+    this.encrypt3 = this.encrypt2.bind(this);
+    this.decrypt3 = this.decrypt2.bind(this);
   }
 
   updateName(event){
@@ -116,6 +151,10 @@ class App extends Component {
        <br/>
       Encrypted message: {this.state.cipherText2} <br/>
       Decrypted message: {this.decrypt2(this.state.cipherText2)}
+      <br/> <br/>
+      Output Decryption 3: <br/>
+      Encrypted message: {this.state.cipherText3} <br/>
+      Decrypted message: {this.decrypt3(this.state.cipherText3)}
       </div>
     );
   }  
@@ -133,6 +172,12 @@ class App extends Component {
     return randsymbol;
   }
 
+  randomAlpha() {
+    var randomNum1 = Math.floor((Math.random() * 25) + 0);
+    var GalacticAlpha = "ᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ𝙹!¡ᑑ∷ᓭℸ ̣ ⚍⍊∴ ̇/||⨅";
+    var randGalactic = GalacticAlpha[randomNum1];
+    return randGalactic;
+  }
 
   CeasarEncrypt(phrase, shift){
     const letters = phrase.split('');
@@ -181,8 +226,28 @@ class App extends Component {
     // console.log(NumberArray)
     // return "still not working :(";
   }
-}
+  
+  encrypt3(phrase){
+    let cipherText3 = '';
+    console.log(phrase.length)
+    this.CeasarEncrypt(phrase.toLowerCase(), phrase.length).forEach((letter) => {cipherText3 += this.randomAlpha() + letter} );
+    return cipherText3;
+  }
 
+  decrypt3(phrase){
+    const newSymbols = phrase.split('');
+    let answer = '';
+    newSymbols.forEach((letter, i) => {if (i % 2 != 0) answer += letter});
+    console.log(answer)
+    let NumberArray = answer.split("").map((c) => {const i = galacticAlphabet.indexOf(c); console.log(i); return i});
+    let shiftedNumberArray = [];
+    NumberArray.forEach((number, i) => {shiftedNumberArray.push((number + (27 - answer.length % 27)) % 27)});
+    console.log(shiftedNumberArray);
+    let originalMessage = shiftedNumberArray.map((number) => {return alphabet[number]});
+    console.log(originalMessage)
+    return originalMessage;
+  }
+}
   export default App;
 
 
