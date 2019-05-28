@@ -63,3 +63,7 @@ Assisted miles in implementing his idea of using breadcrumbs in out app to seper
 
 ## 2019-05-22
 Helped Miles with finishing react router, no we just need to merge.
+
+
+## 2019-05-28
+made release version jobs

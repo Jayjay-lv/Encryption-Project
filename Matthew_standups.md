@@ -110,3 +110,9 @@ Our blockers are the bugs that we have to fix
 Today Kobie and i finally finished the decrypt 2 function after much hard work and trouble. It works as intened with no bugs as of yet
 
 Jayjay is now preparing for the merge and our work is complete as programmers
+
+## 2019-05-28
+
+Today i decided to try and make a new encryption, and it failed. but i wont give yp on it yet
+
+we are almost at the release verison.

@@ -97,3 +97,11 @@ No blockers
 Finished react router and pushed it
 
 No blockers
+
+## Daily Report 2019-05-28
+
+Didn't do much in class.
+
+Get ready to present
+
+No blockers
