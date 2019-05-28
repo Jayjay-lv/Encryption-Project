@@ -69,7 +69,10 @@ Today we began work on our code. I created a few new functions (ie. encrpyt() de
 - Next class we'll work on making the website more usable 
 - we might encounter some problems with splitting up the input box for encrypt and decrypt
 
-
+## Daily report 2019-05-28
+- We worked on encryption 3 and decrypt 3. Its the same as 2 but a different language
+- we have some bugs to fix 
+- we have to find out whats causing the bugs
 
 
 
