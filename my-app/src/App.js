@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const galacticAlphabet = "ᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ𝙹!¡ᑑ∷ᓭℸ ̣ ⚍⍊∴ ̇/||⨅";
+const galacticAlphabet = "ᔑʖᓵ↸ᒷ⎓⊣⍑╎⋮ꖌꖎᒲリ𝙹!¡ᑑ∷ᓭℸ ̣⚍⍊∴ ̇/||⨅ ";
 const specialAlphabet = "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥Ω ";
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
 
@@ -180,11 +180,14 @@ class App extends Component {
     return randGalactic;
   }
 
-  CeasarEncrypt(phrase, shift){
+  CeasarEncrypt(phrase, shift, targetAlphabet){
+    if (targetAlphabet === undefined) {
+      targetAlphabet = specialAlphabet;
+    }
     const letters = phrase.split('');
     let numbers = letters.map((letter) => {return NumberMapping[letter]});
     let shiftedNumbers = numbers.map((number) => {return (number + shift) % 27});
-    let NewLetters = shiftedNumbers.map((number) => {return specialAlphabet[number]});
+    let NewLetters = shiftedNumbers.map((number) => {return targetAlphabet[number]});
     return NewLetters;
 
   }
@@ -231,7 +234,8 @@ class App extends Component {
   encrypt3(phrase){
     let cipherText3 = '';
     console.log(phrase.length)
-    this.CeasarEncrypt(phrase.toLowerCase(), phrase.length).forEach((letter) => {cipherText3 += this.randomAlpha() + letter} );
+    this.CeasarEncrypt(phrase.toLowerCase(), phrase.length, galacticAlphabet).forEach((letter) => {cipherText3 += this.randomAlpha() + letter} );
+    console.log(cipherText3);
     return cipherText3;
   }
 
@@ -239,13 +243,10 @@ class App extends Component {
     const newSymbols = phrase.split('');
     let answer = '';
     newSymbols.forEach((letter, i) => {if (i % 2 != 0) answer += letter});
-    console.log(answer)
     let NumberArray = answer.split("").map((c) => {const i = galacticAlphabet.indexOf(c); console.log(i); return i});
     let shiftedNumberArray = [];
     NumberArray.forEach((number, i) => {shiftedNumberArray.push((number + (27 - answer.length % 27)) % 27)});
-    console.log(shiftedNumberArray);
     let originalMessage = shiftedNumberArray.map((number) => {return alphabet[number]});
-    console.log(originalMessage)
     return originalMessage;
   }
 }
