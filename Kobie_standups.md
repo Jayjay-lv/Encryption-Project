@@ -74,6 +74,8 @@ Today we began work on our code. I created a few new functions (ie. encrpyt() de
 - we have some bugs to fix 
 - we have to find out whats causing the bugs
 
+## Daily report 2019-05-29
+- Today I didn't do much. We mostly as a group just prepared our website to be submitted.
 
 
 

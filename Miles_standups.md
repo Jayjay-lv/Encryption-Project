@@ -105,3 +105,11 @@ Didn't do much in class.
 Get ready to present
 
 No blockers
+
+## Daily Report 2019-05-29
+
+Found react router default route to fix a small problem
+
+Look at the page to fix the small problem
+
+no blockers
