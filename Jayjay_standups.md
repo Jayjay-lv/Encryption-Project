@@ -70,3 +70,6 @@ made release version tasks and features
 
 ## 2019-05-28
 Researched how to make one path a defualt path when the page is loaded
+
+## 2019-05-31
+Made a document with our process
