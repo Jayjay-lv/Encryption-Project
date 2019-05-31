@@ -66,4 +66,7 @@ Helped Miles with finishing react router, no we just need to merge.
 
 
 ## 2019-05-28
-made release version jobs
+made release version tasks and features
+
+## 2019-05-28
+Researched how to make one path a defualt path when the page is loaded
