@@ -113,3 +113,11 @@ Found react router default route to fix a small problem
 Look at the page to fix the small problem
 
 no blockers
+
+## Daily Report 2019-05-31
+
+Writing Process and Reflection
+
+Finish it for homework if we don't finish it.
+
+No blockers
