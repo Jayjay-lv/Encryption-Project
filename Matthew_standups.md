@@ -116,3 +116,9 @@ Jayjay is now preparing for the merge and our work is complete as programmers
 Today i decided to try and make a new encryption, and it failed. but i wont give yp on it yet
 
 we are almost at the release verison.
+
+## 2019-05-29
+
+Today Riley helped me attempt a little side project i had, i wanted to use the same ecryption prossess for encrypt 2 but use a different alphabet. it works, but only to an extent, there are problems with the encrypting however the decrypt works well
+
+I dont think we will be putting this in the project, as it is too finiky.
